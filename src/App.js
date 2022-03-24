@@ -6,19 +6,20 @@ import { Link, Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Fecth from "./pages/Fecth";
 import Home from "./pages/Home";
 import { ToastContainer } from "react-toastify";
-import setAuthToken from "./config/setAuthToken";
-import { useEffect } from "react";
+
+// import setAuthToken from "./config/setAuthToken";
+// import { useEffect } from "react";
 
 function App() {
-  useEffect(() => {
-    // check for token in LS when app first runs
-    if (localStorage.token) {
-      // if there is a token set axios headers for all requests
-      console.log("use effect app run");
-      setAuthToken(localStorage.token);
-      console.log("localStorage.token", localStorage.token);
-    }
-  }, []);
+  // useEffect(() => {
+  //   // check for token in LS when app first runs
+  //   if (localStorage.token) {
+  //     // if there is a token set axios headers for all requests
+  //     console.log("use effect app run");
+  //     setAuthToken(localStorage.token);
+  //     console.log("localStorage.token", localStorage.token);
+  //   }
+  // }, []);
   return (
     <>
       <ToastContainer />
